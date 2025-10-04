@@ -1,12 +1,19 @@
-import { useState } from 'react'
+import { Hero } from "./components/Hero";
+import { WhatIsIO } from "./components/WhatIsIO";
+import { Advantages } from "./components/Advantages";
+import { Implementation } from "./components/Implementation";
+import { AnimationsDemo } from "./components/AnimationsDemo";
+import { BestPractices } from "./components/BestPractices";
 
-function App() {
-
+export const App = () => {
   return (
-    <>
-     <h1>Scroll animations with React</h1>
-    </>
-  )
-}
-
-export default App
+    <div className="App">
+      <Hero />
+      <WhatIsIO />
+      <Advantages />
+      <Implementation />
+      <AnimationsDemo />
+      <BestPractices />
+    </div>
+  );
+};
